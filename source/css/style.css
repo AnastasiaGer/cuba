@@ -16,6 +16,8 @@ html {
  @see https://hankchizljaw.com/wrote/a-modern-css-reset/
  *******************/
 body {
+  width: 1442px;
+  margin: 0 auto;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -30,7 +32,6 @@ body {
 /****************************
  Generic Margins and Paddings
  ****************************/
-body,
 h1,
 h2,
 h3,
@@ -51,11 +52,18 @@ dd {
   margin: 0;
   padding: 0; }
 
+a {
+  display: inline-block;
+  text-decoration: none; }
+
 /*******************
  Lists
  *******************/
-ul {
-  list-style: none; }
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
 
 /*******************
  Forms and buttons
@@ -174,12 +182,6 @@ html {
 
 /* Sections
    ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0; }
-
 /**
  * Render the `main` element consistently in IE.
  */
@@ -553,3 +555,119 @@ template {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.header {
+  width: 1440px;
+  height: 700px;
+  background-image: url("../img/top-bg.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 135px; }
+
+.header-title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 227px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 196px; }
+
+.header-subtitle {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  padding-top: 90px; }
+
+.nav-list {
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 400px; }
+
+.nav-list__item a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #909090; }
+  .nav-list__item a--active {
+    color: #4E5665;
+    border-bottom: 4px solid #ECB84C;
+    padding-bottom: 3px; }
+  .nav-list__item a:hover {
+    color: #4E5665;
+    border-bottom: 4px solid #ECB84C;
+    padding-bottom: 16px; }
+
+.statistic {
+  width: 970px;
+  margin: 0 auto; }
+
+.statistic-title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #4E5665;
+  margin-bottom: 22px; }
+
+.statistic-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.statistic-link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ECB84C;
+  margin-left: 860px; }
+
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.advantages-list__item:first-child {
+  margin-left: 90px; }
+
+.advantages-list__item {
+  margin-right: 162px; }
+
+.advantages-list__item-number {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px; }
+
+.advantages-list__item-text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #909090; }
