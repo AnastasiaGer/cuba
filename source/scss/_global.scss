@@ -16,6 +16,8 @@ html {
  @see https://hankchizljaw.com/wrote/a-modern-css-reset/
  *******************/
 body {
+  max-width: 1442px;
+  margin: 0 auto;
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -31,7 +33,7 @@ body {
 /****************************
  Generic Margins and Paddings
  ****************************/
-body,
+
 h1,
 h2,
 h3,
@@ -53,12 +55,20 @@ dd {
   padding: 0;
 }
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /*******************
  Lists
  *******************/
-ul {
-  list-style: none;
-}
+ ul,
+ li {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
 
 /*******************
  Forms and buttons
