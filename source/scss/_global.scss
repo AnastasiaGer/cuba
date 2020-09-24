@@ -16,7 +16,7 @@ html {
  @see https://hankchizljaw.com/wrote/a-modern-css-reset/
  *******************/
 body {
-  width: 1442px;
+  max-width: 1442px;
   margin: 0 auto;
   min-height: 100vh;
   scroll-behavior: smooth;
