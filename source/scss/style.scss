@@ -44,12 +44,6 @@
 
 }
 
-
-.header-nav {
-  // border-bottom: 1px solid #D0D4D8;
-}
-
-
 .nav-list {
   margin-top: 64px;
   display: flex;
@@ -238,7 +232,7 @@
   position: relative;
 }
 
-.photos-slider__btn{
+.photos-slider__btn {
   position: absolute;
   top: 50%;
   background-color: transparent;
@@ -255,6 +249,116 @@
 
 .photos-slider__btnnext {
   right: -15px;
+}
+
+.footer {
+  margin-top: 56px;
+  background-color: #F8F8F8;
+  width: 100%;
+
+}
+
+.footer-box__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 56px 200px 40px 300px;
+}
+
+
+.footer-item__title {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #4E5665;
+  margin-bottom: 20px;
+}
+
+.footer-item {
+  padding-left: 26px;
+
+  &--talk{
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 0;
+      background-image: url('../img/talk.svg');
+    }
+  }
+
+  &--fb {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 0;
+      background-image: url('../img/fb-icon.svg');
+    }
+  }
+
+  &--ig {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 0;
+      background-image: url('../img/ig-icon.svg');
+    }
+  }
+
+  &--youtube {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 2px;
+      left: 0;
+      background-image: url('../img/youtube-icon.svg');
+    }
+  }
+
+  &--mail {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 13px;
+      top: 2px;
+      left: 0;
+      background-image: url('../img/email-icon.svg');
+    }
+
+  }
+}
+
+.footer-item a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 5px;
+  color: #505050;
+}
+
+.copy {
+  text-align: center;
 }
 
 @import "media";
