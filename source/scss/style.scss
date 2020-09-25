@@ -268,15 +268,19 @@
 }
 
 
-// .car__title {
-//   margin-bottom: 150px;
-// }
+.about__preview-title {
+  margin-bottom: 68px;
+}
 
-// .car__photo {
-//   width: 1170px;
-//   height: 329.27px;
-//   margin-bottom: 60px;
-// }
+
+.about__preview-text {
+  margin: 53px auto 80px;
+}
+
+.about__images-box {
+  width: 1170px;
+  height: 329.27px;
+}
 
 .photos {
   padding-top: 80px;
@@ -314,6 +318,7 @@
 .footer {
   background-color: #F8F8F8;
   padding: 55px 0 32px;
+  border-top: 1px solid rgba(208, 212, 216, .5);
 }
 
 .footer__items {

@@ -717,6 +717,16 @@ html.fp-enabled,
   color: #4E5665;
   margin-bottom: 20px; }
 
+.about__preview-title {
+  margin-bottom: 68px; }
+
+.about__preview-text {
+  margin: 53px auto 80px; }
+
+.about__images-box {
+  width: 1170px;
+  height: 329.27px; }
+
 .photos {
   padding-top: 80px;
   margin-bottom: 81px; }
@@ -746,7 +756,8 @@ html.fp-enabled,
 
 .footer {
   background-color: #F8F8F8;
-  padding: 55px 0 32px; }
+  padding: 55px 0 32px;
+  border-top: 1px solid rgba(208, 212, 216, 0.5); }
 
 .footer__items {
   display: -webkit-box;
