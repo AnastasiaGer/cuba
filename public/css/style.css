@@ -561,6 +561,9 @@ html.fp-enabled,
 .menu {
   border-bottom: 1px solid rgba(208, 212, 216, 0.5); }
 
+.menu__btn {
+  display: none; }
+
 .menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -900,3 +903,28 @@ html.fp-enabled,
   text-align: center;
   font-size: 14px;
   line-height: 19px; }
+
+@media (max-width: 700px) {
+  .header-title {
+    font-size: 120px;
+    line-height: 150px; }
+  .header-subtitle {
+    font-size: 20px; }
+  .menu {
+    position: relative; }
+  .menu__btn {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 10px; }
+  .menu__btn span {
+    display: block;
+    margin-bottom: 10px;
+    background-color: #ECB84C;
+    height: 4px; }
+  .menu__list {
+    display: none;
+    padding-top: 60px;
+    text-align: center; } }

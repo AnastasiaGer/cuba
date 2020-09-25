@@ -86,10 +86,15 @@
   border-bottom: 1px solid rgba(208, 212, 216, .5);
 }
 
+.menu__btn{
+  display: none;
+}
+
 .menu__list {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .menu__list-link {
