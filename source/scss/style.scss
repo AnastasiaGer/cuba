@@ -9,7 +9,7 @@
   padding: 0 15px;
 }
 
-.section-line{
+.section-line {
   border-bottom: 1px solid rgba(208, 212, 216, .5);
 }
 
@@ -19,7 +19,6 @@
 }
 
 .header__top {
-  background-image: url('../img/top-bg.jpg');
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -148,7 +147,7 @@
   margin-bottom: 36px;
 }
 
-.statistic-advantages{
+.statistic-advantages {
   padding-bottom: 80px;
 }
 
@@ -174,36 +173,44 @@
   color: #909090;
 }
 
-.about{
+.about {
   padding-top: 80px;
 }
 
-.about__list{
-  display: flex;
-  flex-wrap: wrap;
+.about__title {
+  margin-bottom: 13px;
+}
+
+.about__text {
+  margin-bottom: 72px;
+}
+
+.about__box {
+  margin-bottom: 100px;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+  background-position: right;
+  &:nth-child(even) {
+    background-position: left;
+  }
 }
 
 .about__item {
-  display: flex;
+  padding: 33px 40px;
+  height: 289px;
+  max-width: 470px;
   position: relative;
-  margin-bottom: 100px;
+  background-color: #fff;
 }
 
-.about__item-info {
-  width: 470px;
-  height: 289px;
-  position: absolute;
-  background-color: #fff;
-  top: 65px;
-  left: 0;
-
+.about__box:nth-child(odd) .about__item {
   &:before {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
-    top: -19px;
-    left: -19px;
+    top: 19px;
+    left: 19px;
     background-image: url('../img/up.svg');
   }
 
@@ -218,24 +225,40 @@
   }
 }
 
-.about__item__title {
+.about__box:nth-child(even) .about__item {
+  margin-left: auto;
+
+  &:before {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 19px;
+    right: 19px;
+    border-top: 2px solid #ECB84C;
+    border-right: 2px solid #ECB84C;
+  }
+
+  &:after {
+    content: '';
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    bottom: 19px;
+    left: 19px;
+    border-bottom: 2px solid #ECB84C;
+    border-left: 2px solid #ECB84C;
+  }
+}
+
+.about__item-title {
   font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 25px;
 
   color: #4E5665;
   margin-bottom: 20px;
 }
-
-.about__item__photo {
-  width: 570px;
-  height: 428px;
-  margin-left: 400px;
-  border-radius: 4px;
-}
-
 
 
 // .car__title {

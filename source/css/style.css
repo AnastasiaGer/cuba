@@ -501,7 +501,6 @@ html.fp-enabled,
   margin: 0 auto; }
 
 .header__top {
-  background-image: url("../img/top-bg.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -648,55 +647,69 @@ html.fp-enabled,
 .about {
   padding-top: 80px; }
 
-.about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+.about__title {
+  margin-bottom: 13px; }
+
+.about__text {
+  margin-bottom: 72px; }
+
+.about__box {
+  margin-bottom: 100px;
+  padding: 70px 0;
+  background-repeat: no-repeat;
+  background-position: right; }
+  .about__box:nth-child(even) {
+    background-position: left; }
 
 .about__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin-bottom: 100px; }
-
-.about__item-info {
-  width: 470px;
+  padding: 33px 40px;
   height: 289px;
+  max-width: 470px;
+  position: relative;
+  background-color: #fff; }
+
+.about__box:nth-child(odd) .about__item:before {
+  content: '';
+  width: 33px;
+  height: 33px;
   position: absolute;
-  background-color: #fff;
-  top: 65px;
-  left: 0; }
-  .about__item-info:before {
+  top: 19px;
+  left: 19px;
+  background-image: url("../img/up.svg"); }
+
+.about__box:nth-child(odd) .about__item:after {
+  content: '';
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  bottom: 19px;
+  right: 19px;
+  background-image: url("../img/down.svg"); }
+
+.about__box:nth-child(even) .about__item {
+  margin-left: auto; }
+  .about__box:nth-child(even) .about__item:before {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
-    top: -19px;
-    left: -19px;
-    background-image: url("../img/up.svg"); }
-  .about__item-info:after {
+    top: 19px;
+    right: 19px;
+    border-top: 2px solid #ECB84C;
+    border-right: 2px solid #ECB84C; }
+  .about__box:nth-child(even) .about__item:after {
     content: '';
     width: 33px;
     height: 33px;
     position: absolute;
     bottom: 19px;
-    right: 19px;
-    background-image: url("../img/down.svg"); }
+    left: 19px;
+    border-bottom: 2px solid #ECB84C;
+    border-left: 2px solid #ECB84C; }
 
-.about__item__title {
+.about__item-title {
   font-family: Georgia;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   line-height: 25px;
   color: #4E5665;
   margin-bottom: 20px; }
-
-.about__item__photo {
-  width: 570px;
-  height: 428px;
-  margin-left: 400px;
-  border-radius: 4px; }
